@@ -10,7 +10,6 @@ body {
 }
 
 .header {
-  border: 1px solid black;
   font-size: 13px;
   color: rgb(0,0,0);
   width: 95%;
@@ -19,7 +18,6 @@ body {
 }
 
 .leftnav {
-  border: 1px dotted red;
   height: 30px;
   width: 30%;
   float: left; 
@@ -28,7 +26,6 @@ body {
 }
 
 .rightnav {
-  border: 1px dotted green;
   height: 30px;
   width: 30%;
   float: right;
@@ -42,11 +39,10 @@ a {
    margin: 5px;
 }
 
-/*a:hover {
+a:hover {
   text-decoration: underline;
-  -webkit-appearance: none;
-  color: olive;
-}*/
+  cursor: pointer;
+}
 
 .main {
   width: 100%;
@@ -101,6 +97,11 @@ input:focus {
   border: 1px solid #f2f2f2;
 }
 
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
 .footer {
   background-color: rgb(242, 242, 242);
   position: fixed;
@@ -111,12 +112,15 @@ input:focus {
   border-top-width: 1px;
 }
 
-.location {
-  padding: 10px; 
-  margin: 10px; 
+.ff {
   border-bottom-color: rgb(228, 228, 228);
   border-bottom-style: solid;
   border-bottom-width: 1px;
+}
+
+.location {
+  padding: 10px; 
+  margin: 5px 5px 5px 10px; 
 }
 
 .location p {
@@ -124,15 +128,34 @@ input:focus {
   color: rgba(0, 0, 0, 0.54);
 }
 
+
 .info {
   padding: 5px; 
   margin: 5px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: 
+  justify-content: end;
+  align-items: end;
+  font-size: 13px;
+  color: rgb(95, 99, 104);
 }
 
-.info {
+.infoleft {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  margin-left: 5px;
+  font-size: 13px;
+  color: rgb(95, 99, 104);
+}
+
+.infoleft a {
+  margin-left: 0;
+}
+
+.inforight {
+  float: right;
+  padding: 13px 10px 13px 10px;
+  margin-left: 10px;
   font-size: 13px;
   color: rgb(95, 99, 104);
 }
