@@ -4,4 +4,4 @@ This homepage has been constructed as an assigment From The Odin Project's [curr
 
 It was built completely in HTML 5 & CSS.
 
-[Link] (https://pparmin.github.io/google-homepage/) for the homepage.
+[Link](https://pparmin.github.io/google-homepage/) for the homepage.
